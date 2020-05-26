@@ -1,0 +1,484 @@
+React Class
+
+Introduction
+
+1. React Overview
+
+    What is React?
+        React is a flexible and powerful open-source library for developing rich client-side applications.
+        It takes cues from the world of server-side development and applies them to HTML elements.React creates a foundation that
+        makes building rich web applications easier.
+
+    Why you should use React?
+        React is not the perfect solution to every problem, and it is important to know when you should use React
+        and when you should seek an alternative.React delivers the kind of functionality then used to be available
+        only to server-side developers but is delivered entirely in browser.
+
+        Note:
+        The goal, is to perform this setp as infrequent as possible and deliver as much of the app as possible to the user
+        when it is performed.
+
+    There are 2 types of web applications
+    1.round-trip applications
+        Web apps were developed to follow a round-trip model.The browser requests an HTML document from the server.
+        User interactions like as clicking a button or submitting a form-leads the browser tho request and receive
+        a completely new HTML document fromm the server.
+        Note:In this type of application browser is essentially a rendreing engine for HTML content, and all of the 
+        application logic and data resides on server.
+
+    2.single-page applications
+        Single-page applications take a different approach than round-trip apps. An initial HTML document is sent to the browser,
+        but user interactions lead to HTTP requests for small fragments of HTML or data inserted into the existing set of 
+        elements being displayed to the user.
+        Note: the initial HTML document is never reloaded or replaced, and the user can continue to interact with the existing
+        HTML while the HTTP requests are being performed asynchronously.
+
+    React Features:
+        1.JSX
+        JSX is JavaScript syntax extension.It isn't necessary to use JSX in React development, but it is recommended.
+
+        2.Components
+        React is all about Components. You need to think of everything as a component.This will help you maintain the code when 
+        working on largerscale projects.
+
+        3.Unidirectional data flow and flux
+        React uses one-way data flow which made it easy to reason about your app. Flux is a pattern that helps keeping you data
+        unidirectional.
+
+    Advantages of React
+    -React used virtual DOM. This will improve apps performance, since Javascript virtual DOM is faster than the regular DOM.
+
+    -React can be used on client and server side as weell as with other frameworks.
+
+    -Component and data patterns improve readability which helps to maintain larger apps.
+
+    React Limitations
+    -Covers only the view layes of the app, hence you still need to choose other technologies to get a complete tooling 
+    set for development.
+
+2. React Features
+
+    The important features of ReactJS :
+    a).JSX
+    b).Components
+    c).One-way Data Binding
+    d).Virtual DOM
+    e).Simplicity
+    f).Performance
+
+    JSX:
+    JSX stands for JavaScript XML. It is a JavaScript syntax extension. Its an XML or HTML like syntax used by ReactJS.
+    This syntax is processed into JavaScript calls of React Framework. It extends the ES6 so that HTML like text can
+    coexist with JavaScript react code.
+    Note:It is not necessary to use JSX, but it is recommended to use in ReactJS.
+
+    Components:
+    ReactJs is all about componenets.React JS application is made up of multiple Components, and each component has its
+    own logic and controls. These components can be reusable which help you to maintain the code when working 
+    on large scale projects.
+
+    One-way Data Binding
+    ReactJS is designed in such a manner that follows unidirectional data flow or one-way data binding.
+    The benefits of one-way data binding gives ou better control throughout the application.
+    
+    Note:Flux is a pattern that helps to keep you data unidirectional.This makes the application more flexible that
+    leads to increase efficiency.
+
+    Virtual DOM:
+    A virtual DOM object is a representation of the original DOM object. It works like a one-way data binding.
+    Whenevr any modifications happen in the web application , the entire UI is re-rendered in the virtual DOM 
+    representation. Then it checks the differencec between the previous DOM and new DOM.Once it has done , the 
+    real DOM will update only the things that have actually changed.This makes the application  faster and there is no
+    wastage of memory.
+
+    Simplicity
+    ReactJS uses JSX file which makes the application simple and to code as well as understand. We know that 
+    ReactJS is component based approach which makes the coode reusable as your need .This makes it simple to use and learn.
+
+    Performance
+    ReactJS is known to be a great performer. This feature makes it much better than other frameworks out there today.
+    The reason behind this is that it manages a virtual DOM. The DOM is a cross-platform and programming API which
+    deals with HTML,XML or XHTML.The DOM exists entirely in memory.Due to this,when we create a component,we did not
+    write directly to the DOM. Instead, we are writing virtual components that will turn into the DOM leading to 
+    smoother and faster performance.
+
+3. Whats new React v16
+    Changes in React16:
+    -The major changes made to the reconcilation intervals,and what they mean for React projects,going forward.
+    -Confoining errors to the sections of your application by setting error boundaries.
+    -Creating components that render more than one element and components that render strings.
+    -Rendering to the portals.
+
+    -Rethinking and Rendering
+    Understanding the motivation for the major internal changes that have happened in React16 and how they work ata a higher 
+    level will help you think about how to best design your components today and for the fututre React applications.
+
+    -The status quo
+    The two key factors for this are its simplicity and its performance.React is simple because it has a small API 
+    surface  thats easy to pick up and experiment with.
+
+    Note:
+    React is performant because it minimizes the number of DOM operations it has to invoke by reconciling changes in a 
+    render  tree.
+
+    -Running to completion
+    When the reconciler resumes building the render tree,it first checks to see if new state changes have taken place
+    since its paused.If so,it takes the partially completed render tree and reuses what it can,based on the new state 
+    changes.Then , it keeps going until the next pause. Eventually,reconcilation completes.
+
+    -What are fibres?
+    In order to separate the job of rendering components into smaller units of work,
+    React has created an abstraction called a fiber.
+    A fiber represents a unit of rendering work that can be paused and resumed.It has other low level properties
+    such as priority and where the output of the fiber sholud be returned to when completed.
+
+    -Better component error handling
+    React 16 intoduces better error handling capabilities for components. The concept is called an error boundary.
+    And its implemented as a lifecycle method that is called when any child components throws an exception.
+    The paret class that implements componentDidCatch() is the error boundary.
+
+    Note:
+    The motivartion for this functionality is to give the application an opportunity to recover from from certain errors.
+
+    -Rendering multiple elements amd strings
+    Previously the rule was that components could only render one element.
+    This has changed in two important ways in React 16.First,you can now return a collection of elements from your 
+    components.
+    Second, you can now render plain text content.
+
+    -Rendering to portals
+    Normally, the rendered output of a component is placed where the JSX element is located within the tree.
+    Note:
+    Portals allow components to specify their container elements at render time.
+
+4. Pros and Cons
+
+    Advantages of ReactJS
+    1.Easy to learn and use.
+    2.Creating Dynamic Web Applications Becomes easier
+    3.Reusable Components
+    4.Performance Enhancement
+    5.The support of Handy tools
+    6.Known to be SEO Friendly
+    7.The Benefit of having JavaScript library
+    8.Scope for testing the codes.
+
+    Disadvantages of React JS
+    1.The high pace of development
+    2.Poor Documentation
+    3.View part
+    4.JSX as a barrier.
+
+5. Setup Environment
+    React Code Overview:
+    JS:
+        function Person(props){
+    return (
+        <div class="person">
+        <h1>{props.name}</h1>
+        <p>Your Age:{props.age}</p>
+        </div>
+    );
+    }
+    var app=(
+    <div>
+        <Person name="Akhil" age="24" />
+        <Person name="Ankit" age="26"/>
+        <Person name="Aman" age="29"/>
+        </div>
+    );
+
+    ReactDOM.render(app,document.querySelector('#app'));
+
+    HTML:
+    <div id="app"></div>
+    css:
+    .person{
+        display:inline-block;
+        padding:20px;
+        border:1px solid #eee;
+        box-shadow:0 2px 2px #ccc;
+        width:200px;
+    }
+
+    Environment Setup for ReactJS in VS CODE
+    1.Prerequisite:Install Node.js
+    2.To create project: npx create-react-app my-app
+    Note:The create-rect-app package is used to create projects and setup the tools that are required for effective react 
+    development.
+    3.Type: cdn my-app
+    4.npm start
+    Once the initial project compilation is complete, a new browser window will open and display the 
+    Url:http://localhost:3030 and display the placeholder content.
+
+    Forlders:
+    -->node_modules
+    This folder contains the packages that the application and development tools require.
+    -->public 
+    This folder is used for static content and includes the index.html file that is used to respond to HTTP requests.
+    -->src
+    The src folder contains the application code and content.
+    -->.gitignore
+    This file is used to exculde files and folders from the Git.
+    -->package-lock.json
+    This file contains a complete list of the package dependencies for the project.
+    -->package.json
+    This folder contains the set of top-level package dependencies for the project.
+    -->README.mad
+    This file contains information regarding project tools.
+
+    -src Folder(Subfolders)
+    index.js-This file is responsible for configuring and starting our react application.
+    index.css-This file contains the global CSS styles for the application.
+    App.js-This file conatins the top-level React component.
+    App.css-The file contaons the placeholder CSS styles for new projects.
+    App.test.js-It contains unit tests for the top level components.
+    serviceWorker.js-This file is used by the progressive web applications, which can work offline.
+    logo.svg-It contains the React logo and is displayed by the placeholder component added to the project when it is created.
+
+    Essential Npm Commands
+    1.npx create-react-app <project-name>
+    This command creates a new React project.
+    
+    2.npm install
+    This command installs the packages specified in the package.json file.
+
+    3.npm install package@version
+    This command performs a local install of a specific version of a package and updates the package.json file.
+
+    4.npm install --save dev package@version
+    This command performs a loal install of a specific version of a package and updates the package.json file
+    to add the package to the devDependencies section,which is used to add packages to the project that are required for
+    development but are not part of the application.
+
+    5.npm list
+    This command will list all of the local packages and their dependencies.
+
+    6.npm install --global package@version
+    This command will perform a global install of a specific version of a package.
+    
+    7.npm run
+    This will execute one of the scripts defined in the package.json file.
+    
+    8. cd <project-name>  npm start
+    This command is used to compile react in localhost browser.
+
+6.React JSX
+    What is JSX?
+    -JSX allows us to write HTML like code in our JavaScript files.With JSX, we can write React components in an
+    efficient and expressive manner.
+
+    -JSX is not a String
+    The JSX in the example is not wrapped in quotes.Think of it as another type in JavaScript.
+
+    -JSX is the return value of the App(given example in App.js) method.
+    -Every component you use needs a render() that returns some valid JSX.
+
+    -JSX Can include JavaScript
+    For example:
+    <p>{Math.floor(Math.random()*100)} retweets</p>
+    <p>{this.currentTime()}</p>
+
+    Syntax for fumction:
+    currentTime=()=> new Date().toString()
+
+    JSX cannot include All JavaScript Statements.
+    JSX is an extension of JavaScript wrapping a lot of underlying function calls in a syntactically appealing style.
+    This is why JSX code is considered declarative.When we are writing in JSX, it is quivalent to saying
+    "Make an h1 element with the content inside" and letting React work on element creation and function calls.
+    Because we follow the proper Syntax, react knows that when we write.
+
+    For eg:
+    <h1 id="header">Hello</h1>
+    The JSX needs to be converted into regular,imperative JavaScript.
+    React.createElement("h1",{id:header},"Hello")
+
+    Due to this,as well as JSX's specific syntax, we aren't able to include just any JavaScript statement. For instance,
+    the following code will not work in JSX.
+    <h1 id="header">{if(true){
+        "Hello"
+    }
+    else{
+        "Goodbye"
+    }}</h1>
+
+    //Working logic:
+    <h1 id="header">{true ? "Hello":"Goodbye"}</h1>
+
+    A component Must Return OneJSX Element
+
+    Component example:
+
+        class PlainDiv extends Component{
+        render(){
+            return <div>I am one line,so i don't need parantheses</div>
+        }
+        }
+        class Photo extends Component{
+        render(){
+            return(
+            <figure>
+                <img classname="image" src="" />
+                <figcaption>Whoa</figcaption>
+            </figure>
+            )
+        }
+        }
+        class Table  extends Component{
+        render(){
+            return (
+            <table>
+                <tr>
+                <th>ID</th>
+                <th>Name</th>
+                </tr>
+                <tr>
+                <th>1225</th>
+                <th>Akhil</th>
+                </tr>
+                </table>
+            )
+        }
+        }
+        class ParentComponent extends Component{
+        render(){
+            return(
+            <main>
+                <PlainDiv/>
+                <Photo/>
+                <Table/>
+            </main>
+            )
+        }
+        }
+
+    Each of these is a valid component, but all of these components have one returned JSX element that contains 
+    everything else.Without an element that wraps the returned JSX in a component,we will get an error.
+
+    Avoiding Keywords:
+    class-->classname
+    This is because class is a reserved keyword in JavaScript.
+    for-->htmlFor
+
+    Conclusion:
+    Old Method:
+    React.createElement("h1",{id:header},"Hello");
+
+    While JSX introduces some new rules we must follow, the benfit is that we can wrtie code that is semantic 
+    and declarative.
+    <h1 classname="greeting">Hello</h1>.
+
+    Try online compiler for JSX
+    https://babeljs.io/repl
+
+7.React Components
+    A component is considered as the core building blocks of a React application.It makes the task of building UIs much
+    easier.Each component exists in the same space, but they work independently from one another and merge all in a
+    parent component,which will br the final UI of your application.
+
+    In React JS we have mainly two types of componenets.They are:
+    
+    1.Functional Components
+    The functional component is also known as a stateless commponent because they do not hold or manage state.
+    Ex:
+    function App(props) {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React {props.name}
+        </a>
+      </header>
+    </div>
+   
+  );
+}
+    2.Class Components
+    Class components are more complex than functional components. It requires you to extend from React.Component
+    and create a render function which return a React element.You can pass data from one class to another class.
+    You can create a class by defining a class that extends component and has a render function.
+    Ex:
+    class Table  extends React.Component{
+    render(){
+      return (
+        <table>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+          </tr>
+          <tr>
+            <th>1225</th>
+            <th>Akhil</th>
+          </tr>
+          </table>
+      )
+    }
+  }
+
+8. Composing Components
+    When defining React components, we can use them as children of another component by using that component as
+    a React element.
+
+    Note:
+    Tags corresponding to componenets must follow the case used in the class definition , and by convention, component
+    class name use Pascal case even though it is not required by React.
+
+9. Component Life Cycle
+    Lifecycle Methods
+    ->componentWillMount 
+    It is executed before rendering , on both the server and the client side.
+    
+    ->componentDidMount
+    It is executed after the first render only on the client side.This is where AJAX requests and DOM or state updates
+    should occur. This method is also used for integration with other JavaScript frameworks and any functions
+    with delay execution such as setTimeout or setInterval. We are using it to update the state so we can trigger the 
+    other lifecycle methods.
+
+    ->componentWillReceiveProps
+    It is invoked as soon as the props are updated before another render is called. We triggered it from setNewNumber
+    when we updated the state.
+
+    ->shouldComponentUpdate
+    It shoild return true or false value. This will determine if the component will be updated or not. This is set to 
+    true by default.If you are sure that the component doesn't need any further refresh/render after state or props
+    are updated, you can return false value.
+
+    ->componentWillUpdate
+    It is called just before rendering.
+
+    ->componentDidUpdate
+    It is called just after rendering.
+
+    ->componentWillUnmount
+    It is called after the component is unmounted from the dom. We are unmounting our component in index.js
+    In the example, we will set the initial state in the constructor function.The setNewNumber is used to update the 
+    state.All the lifecycle methods are inside the Content component.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
