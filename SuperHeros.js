@@ -2,17 +2,21 @@ import React from 'react';
 class SuperHeros extends React.Component{
     render(){
         return <ul>
-            <li>
-                <h1>Superman</h1>
-            </li>
-            <li>
-                <h1>Batman</h1>
-            </li>
-            <li>
-                <h1>Spiderman</h1>
-            </li>
+           <SuperHerosClass name="Batman" />
+           <SuperHerosClass name="Superman" />
+           <SuperHerosClass name="Spiderman" />
+           <SuperHerosClass name="Hulk" />
         </ul>;
     }
 }
+class SuperHerosClass extends React.Component{
+    render(props){
+        return <li>
+            <h3>{this.props.name}</h3>
+            
+        </li>;
+    }
+}
+
 
 export default SuperHeros;
