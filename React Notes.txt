@@ -464,8 +464,14 @@ Functional Components
     In the example, we will set the initial state in the constructor function.The setNewNumber is used to update the 
     state.All the lifecycle methods are inside the Content component.
 
+10. React Props
+    Props are used to pass dat from parent component to child component abd they are the main mechanism for 
+    component communication.So, props are a major part of what allows the React component pattern to work.
+    Eg. is in SuperHero.js file.
 
-
+11.React State
+A React state is a mutable dat stoe of components self contained,functionality-centric blocks of UI and logic.
+By using state in a view (render()) and changing values later,you can affect view's representation.
 
 
 
