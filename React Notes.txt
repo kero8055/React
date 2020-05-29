@@ -1,6 +1,3 @@
-React Class
-
-Introduction
 
 1. React Overview
 
@@ -67,6 +64,7 @@ Introduction
     f).Performance
 
     JSX:
+
     JSX stands for JavaScript XML. It is a JavaScript syntax extension. Its an XML or HTML like syntax used by ReactJS.
     This syntax is processed into JavaScript calls of React Framework. It extends the ES6 so that HTML like text can
     coexist with JavaScript react code.
@@ -103,9 +101,10 @@ Introduction
     smoother and faster performance.
 
 3. Whats new React v16
+
     Changes in React16:
     -The major changes made to the reconcilation intervals,and what they mean for React projects,going forward.
-    -Confoining errors to the sections of your application by setting error boundaries.
+    -Confining errors to the sections of your application by setting error boundaries.
     -Creating components that render more than one element and components that render strings.
     -Rendering to the portals.
 
@@ -201,15 +200,15 @@ Introduction
         width:200px;
     }
 
-    Environment Setup for ReactJS in VS CODE
-    1.Prerequisite:Install Node.js
-    2.To create project: npx create-react-app my-app
-    Note:The create-rect-app package is used to create projects and setup the tools that are required for effective react 
-    development.
-    3.Type: cdn my-app
-    4.npm start
-    Once the initial project compilation is complete, a new browser window will open and display the 
-    Url:http://localhost:3030 and display the placeholder content.
+Environment Setup for ReactJS in VS CODE
+1.Prerequisite:Install Node.js
+2.To create project: npx create-react-app my-app
+Note:The create-rect-app package is used to create projects and setup the tools that are required for effective react 
+development.
+3.Type: cdn my-app
+4.npm start
+Once the initial project compilation is complete, a new browser window will open and display the 
+Url:http://localhost:3030 and display the placeholder content.
 
     Forlders:
     -->node_modules
@@ -263,7 +262,8 @@ Introduction
     8. cd <project-name>  npm start
     This command is used to compile react in localhost browser.
 
-6.React JSX
+
+6. React JSX
     What is JSX?
     -JSX allows us to write HTML like code in our JavaScript files.With JSX, we can write React components in an
     efficient and expressive manner.
@@ -371,14 +371,14 @@ Introduction
     Try online compiler for JSX
     https://babeljs.io/repl
 
-7.React Components
+7. React Components
     A component is considered as the core building blocks of a React application.It makes the task of building UIs much
     easier.Each component exists in the same space, but they work independently from one another and merge all in a
     parent component,which will br the final UI of your application.
 
     In React JS we have mainly two types of componenets.They are:
     
-    1.Functional Components
+Functional Components
     The functional component is also known as a stateless commponent because they do not hold or manage state.
     Ex:
     function App(props) {
@@ -402,7 +402,7 @@ Introduction
    
   );
 }
-    2.Class Components
+    2. Class Components
     Class components are more complex than functional components. It requires you to extend from React.Component
     and create a render function which return a React element.You can pass data from one class to another class.
     You can create a class by defining a class that extends component and has a render function.
@@ -423,6 +423,7 @@ Introduction
       )
     }
   }
+
 
 8. Composing Components
     When defining React components, we can use them as children of another component by using that component as
@@ -462,16 +463,6 @@ Introduction
     It is called after the component is unmounted from the dom. We are unmounting our component in index.js
     In the example, we will set the initial state in the constructor function.The setNewNumber is used to update the 
     state.All the lifecycle methods are inside the Content component.
-
-
-
-
-
-
-
-
-
-
 
 
 
