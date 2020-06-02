@@ -470,8 +470,74 @@ Functional Components
     Eg. is in SuperHero.js file.
 
 11.React State
-A React state is a mutable dat stoe of components self contained,functionality-centric blocks of UI and logic.
-By using state in a view (render()) and changing values later,you can affect view's representation.
+    A React state is a mutable dat stoe of components self contained,functionality-centric blocks of UI and logic.
+    By using state in a view (render()) and changing values later,you can affect view's representation.
+
+12.State vs Props
+    Differentiation in state and props:
+    1.Props are read-only whereas State changes can be asynchronous.
+    2.Props are immutable whereas state is mutable.
+    3.Props allow you to pass data from one component to another component as an argument whereas
+    State holds information about the components.
+    4.Props can be accessed by child component whereas State cannot be accessed by child component.
+    5.Props are used to communicate between components whereas States can be used for rendreing dynamic changes
+    with the component.
+    6.Stateless components can have props whereas Stateless components cannot have state.
+    7.Props make component resuable whereas State cannot make components resuable.
+    8.Props are external and controlled by whatever renders the component whereas The State is internal and 
+    controlled by React component itslef.
+
+    Condition                   Props           State
+    -Can get intial value from 
+    parent Component?           Yes             Yes
+    -Can be changed by parent 
+    componenets?                Yes             No
+    -Can set default values
+    inside componenet?          Yes             Yes
+    -Can change inside compo-   No              Yes
+    nent?
+    -Can set initial value 
+    for child comp.?            Yes             Yes
+    Can change in child 
+    componenets?                Yes             No
+
+    Simmilarities:
+    1.Both are plain JS object.
+    2.Both can contain default values.
+    3.Both are read-only when they are using by this.
+
+13.What is constructor?
+    The constructor is a method used to initilixe an object's state in a class.It automatically called
+    during the creation of an object in a class.
+    The constructor in a React component is called before the component is mounted.
+    Note:
+    When you implement constructor for React component, you need to call super(props) method before doing anything
+    .If you do not call super(props) method,this.props will be undefined in the constructor and can lead to bugs.
+    Syntax:
+        Constructor(props){
+            super(props);
+        }
+    Purpose:
+    1. It is used for initializing the local state of the component by assinging an object to this.state.
+    2.It is used for binding event handler methods that occur in your component.
+
+    Note:If you neither intialize state nor bind methods for your React component,there is no need to implement
+    a constructor for React comp.
+
+    -It is not necessary to have a constructor in every componenet. If the componenet is not complex it will 
+    simply return the node.
+    -Yes, it is necessary to call super() inside a constructor. If you need to set a property or access 'this'
+    inside the constructor in your componenet, you need to call super().
+
+    We can use constructor in foll ways:
+    1.The constructor is used to intialize state.
+    2.Using 'this' inside constructor use super(props).
+    3.initializing third-party library.
+
+14.Arrow Functions
+
+
+
 
 
 
