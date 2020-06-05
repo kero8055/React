@@ -71,7 +71,7 @@
     Note:It is not necessary to use JSX, but it is recommended to use in ReactJS.
 
     Components:
-    ReactJs is all about componenets.React JS application is made up of multiple Components, and each component has its
+    ReactJs is all about components.React JS application is made up of multiple Components, and each component has its
     own logic and controls. These components can be reusable which help you to maintain the code when working 
     on large scale projects.
 
@@ -376,7 +376,7 @@ Url:http://localhost:3030 and display the placeholder content.
     easier.Each component exists in the same space, but they work independently from one another and merge all in a
     parent component,which will br the final UI of your application.
 
-    In React JS we have mainly two types of componenets.They are:
+    In React JS we have mainly two types of components.They are:
     
 Functional Components
     The functional component is also known as a stateless commponent because they do not hold or manage state.
@@ -430,7 +430,7 @@ Functional Components
     a React element.
 
     Note:
-    Tags corresponding to componenets must follow the case used in the class definition , and by convention, component
+    Tags corresponding to components must follow the case used in the class definition , and by convention, component
     class name use Pascal case even though it is not required by React.
 
 9. Component Life Cycle
@@ -491,7 +491,7 @@ Functional Components
     -Can get intial value from 
     parent Component?           Yes             Yes
     -Can be changed by parent 
-    componenets?                Yes             No
+    components?                Yes             No
     -Can set default values
     inside componenet?          Yes             Yes
     -Can change inside compo-   No              Yes
@@ -499,7 +499,7 @@ Functional Components
     -Can set initial value 
     for child comp.?            Yes             Yes
     Can change in child 
-    componenets?                Yes             No
+    components?                Yes             No
 
     Simmilarities:
     1.Both are plain JS object.
@@ -535,6 +535,20 @@ Functional Components
     3.initializing third-party library.
 
 14.Arrow Functions
+The Arrow function is the new feature of the ES6 standards. If you need to use arrow functions,It is not 
+necessary to bind any event to 'this'.Here the scope of 'this' is global and not limited to any calling 
+function. So if you want to use Arrow function, there is no need to bind 'this' inside the constructor.
+
+15.Forms
+Form components such as <input/>,<textarea/> and <option/> are handled differently by React as they allow 
+for being mutated by the users input unlike staic components like <div/><h1/>.As we combine the dynamic nature
+of form components combined with the deteremination of React components can lead to some unexpected things 
+when you are first learnig React.
+
+Read only Input Value:
+React components are only wired to display what is set on the input component's value attribute.
+
+
 
 
 
