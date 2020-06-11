@@ -7,7 +7,11 @@ import Cons from './Constructor';
 import * as serviceWorker from './serviceWorker';
 import App from './LifeCycle';
 import Arrow from './ArrowFn';
+import Box from './TextBox';
+import ErrorMsg from './ErrorMessage';
 
+ReactDOM.render(<Box />,document.getElementById('arr'));
+ReactDOM.render(<ErrorMsg />,document.getElementById('error'));
 
 ReactDOM.render(<Arrow />,document.getElementById('arrow'));
 
