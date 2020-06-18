@@ -8,10 +8,19 @@ import * as serviceWorker from './serviceWorker';
 import App from './LifeCycle';
 import Arrow from './ArrowFn';
 import Box from './TextBox';
+import ListItem from './listExam';
 import ErrorMsg from './ErrorMessage';
 
 ReactDOM.render(<Box />,document.getElementById('arr'));
+const myList=['Arun','Bob','Winnie'];
+ReactDOM.render(<ListItem myList={myList} />,document.getElementById('lis'));
 ReactDOM.render(<ErrorMsg />,document.getElementById('error'));
+let numbers=[1,2,3,4,5];
+let multiplyNums= numbers.map((value)=>{
+  //alert(value);
+  return (value*3);
+});
+//alert('New Array'+multiplyNums);
 
 ReactDOM.render(<Arrow />,document.getElementById('arrow'));
 

@@ -535,18 +535,66 @@ Functional Components
     3.initializing third-party library.
 
 14.Arrow Functions
-The Arrow function is the new feature of the ES6 standards. If you need to use arrow functions,It is not 
-necessary to bind any event to 'this'.Here the scope of 'this' is global and not limited to any calling 
-function. So if you want to use Arrow function, there is no need to bind 'this' inside the constructor.
+    The Arrow function is the new feature of the ES6 standards. If you need to use arrow functions,It is not 
+    necessary to bind any event to 'this'.Here the scope of 'this' is global and not limited to any calling 
+    function. So if you want to use Arrow function, there is no need to bind 'this' inside the constructor.
 
 15.Forms
-Form components such as <input/>,<textarea/> and <option/> are handled differently by React as they allow 
-for being mutated by the users input unlike staic components like <div/><h1/>.As we combine the dynamic nature
-of form components combined with the deteremination of React components can lead to some unexpected things 
-when you are first learnig React.
+    Form components such as <input/>,<textarea/> and <option/> are handled differently by React as they allow 
+    for being mutated by the users input unlike staic components like <div/><h1/>.As we combine the dynamic nature
+    of form components combined with the deteremination of React components can lead to some unexpected things 
+    when you are first learnig React.
 
-Read only Input Value:
-React components are only wired to display what is set on the input component's value attribute.
+    Read only Input Value:
+    React components are only wired to display what is set on the input component's value attribute.
+
+16.Simple Form
+    Example Given in file TextBox.js
+
+17.Form Validation
+    Putting validation on forms as per the required criteria,is the Form Validation.
+
+    Note:
+    When writing client side validations and validating a form there are two scopes that we need to be 
+    able to validate at on client side.
+
+    Field-level Validation
+    Field level validation is validating a single input,in isolation ,for simple things like
+    wheather a foeld is required,wheather a fields length is under maximum length or over a minimum,or wheather
+    a field satisfies a regular expression for things like emails,social security,and so on.
+
+    Form-level Validation
+    In addition to validating a form's various feilds against simple rules in isolation we also need 
+    ability to validate our form agianst complex rules that consider more than one field.
+    Eg:Enter email/password with the Re-Enter field,or When adding Address,billing should be copied to shipping
+    data, when filled.
+
+18.Custom Error Msg In React
+    You need to create variable in stae and later on u can show it on UI as per Validation rules by 
+    populating the error message State.
+    Example Given in ErrorMessage.js
+
+19.React Events
+    An event is an action that could be triggered as a result of the user action or system generated event.
+    For example, a mouse click,loading of a webpage,presseing a key and other interaction are called events.
+
+    The react event handling system is known as Synthetic Events.The Synthetic is a cross-browser wrapper
+    of the browser's native event.
+
+    Differences between event at React and DOM:
+    -React events are names as camelCase instead of lowercase.
+    -With JSX, a function passed as the event handler instead of a string.
+    -In react,we cannot return false to prevent the default behaviour.We must call preventDefault event 
+    explicitly to prevent the default behaviour.
+
+    Example can be seen in TextBox.js
+
+20.React Lists
+Lists are used to display data in an ordered format and mainly used to display menus on website.
+Note:
+We need to use map function for this.
+Example is in listExam.js
+
 
 
 
