@@ -10,9 +10,12 @@ import Arrow from './ArrowFn';
 import Box from './TextBox';
 import ListItem from './listExam';
 import ErrorMsg from './ErrorMessage';
+import Key from './KeyImp';
 
 ReactDOM.render(<Box />,document.getElementById('arr'));
 const myList=['Arun','Bob','Winnie'];
+ReactDOM.render(<Key myLists={myList} />,document.getElementById('key'));
+
 ReactDOM.render(<ListItem myList={myList} />,document.getElementById('lis'));
 ReactDOM.render(<ErrorMsg />,document.getElementById('error'));
 let numbers=[1,2,3,4,5];

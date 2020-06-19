@@ -595,6 +595,18 @@ Note:
 We need to use map function for this.
 Example is in listExam.js
 
+21.React Keys
+A key is a unique identifier.In react it is used to identify which items have changed,created,updated 
+or deleted from the Lists.
+Keys should be given inside the array to give elements a stable identity.
+
+If there is no dtable Ids for rendered items you can assign the item index as a key to the lsits.
+For example:
+const stringList=['a','b','c'];
+const updatedLists = stringList.map((srtrlist,index)=>{
+    <li key={index} >{srtrlist}</li>
+});
+
 
 
 
