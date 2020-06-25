@@ -604,8 +604,78 @@ If there is no dtable Ids for rendered items you can assign the item index as a 
 For example:
 const stringList=['a','b','c'];
 const updatedLists = stringList.map((srtrlist,index)=>{
-    <li key={index} >{srtrlist}</li>
+    <li key={index}>{srtrlist}</li>
 });
+
+Note:
+It is not recommended to use indexes for keys.If the order of the item may change in future.
+
+Using Keys with Component
+For example see in KeyImp.js
+
+22.React Refs
+Refs is the shorthand used for references in React.It is similar to keys in React.It is an attribute which 
+makes it possible to store a reference to particular DOM nodes or React elements and how to interact with it.
+It is used when we want to change the value of a child component Without making the use of props.
+
+When to Use Refs
+Refs can be used in the following case:
+-->When we need DOM measurements such as managing focus,text selection,or media playback.
+-->It is used in triggering imperative animations.
+-->When integrating with third-party DOM libraries.
+-->It can also be used in callbacks.
+
+When to not use Refs
+-->Its use sholud be avoided for anything that can be done declaratively.
+For example,
+Instead of using open() and close() methods on a Dialog component,you need to pass an isOpen prop to it.
+-->You should have to avoid overuse of Refs.
+
+How to create Refs:
+In Recat,Refs cab be created by using React.createRef().It can be assigned to React elements vis the ref 
+attribute.It is commonly assigned to an instance property when a component is created,and then can be 
+referenced throughout the component.
+For example(Ref.js)
+class MyCOmponent extends React.Component{
+    constructor(props){
+        super(props);
+        this.callRef=React.createRef();
+    }
+    render(){
+        return <div ref={this.callRef}/>
+    }
+}
+
+How to access Refs
+In React ,when a ref is passed to an elment isdie render method,a reference to the node can 
+be accessed via the current attribuyte of this ref.
+Syntax:
+    const node=this.callRef.current;
+
+Refs current properties:
+The ref value is depending on the type of node:
+-When the ref attribute is usend in HTML element,the ref created with React.createRef() receives the underlying
+DOM element as its current property.
+-If the ref attribute is used on a custom class component,then ref object receives the mounted instance 
+of the component as its current property.
+-The ref attribute cannnot be used on function components as they don't have instances.
+
+Adding Refs to DOM Element
+For example(Ref.js)
+
+Adding Ref to Class components
+For Example (RefComp.js)
+
+Callback Refs
+It gives more control when the refs are set and unset instead of creating refs by createRef() method,React allows
+a way to create refs by passing a callback function to the ref attribute of a component.
+Syntax:
+<input type="text" ref={element =>this.callRefInput = element} /> 
+
+The callback function is used to store refrence to the DOM node ins an instance property and can accessed elsewhere.
+
+Syntax:
+this.callRefInput.value
 
 
 

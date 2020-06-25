@@ -11,7 +11,13 @@ import Box from './TextBox';
 import ListItem from './listExam';
 import ErrorMsg from './ErrorMessage';
 import Key from './KeyImp';
+import Reff from './Ref';
+import RefComp from './RefComp';
+import Refcall from './RefCallback';
 
+ReactDOM.render(<Refcall />,document.getElementById('refCall'));
+ReactDOM.render(<Reff />,document.getElementById('reff'));
+ReactDOM.render(<RefComp />,document.getElementById('refComp'));
 ReactDOM.render(<Box />,document.getElementById('arr'));
 const myList=['Arun','Bob','Winnie'];
 ReactDOM.render(<Key myLists={myList} />,document.getElementById('key'));
