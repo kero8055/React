@@ -14,7 +14,10 @@ import Key from './KeyImp';
 import Reff from './Ref';
 import RefComp from './RefComp';
 import Refcall from './RefCallback';
+import CompRef from './ComponentRef';
 
+
+ReactDOM.render(<CompRef />,document.getElementById('refComp1'));
 ReactDOM.render(<Refcall />,document.getElementById('refCall'));
 ReactDOM.render(<Reff />,document.getElementById('reff'));
 ReactDOM.render(<RefComp />,document.getElementById('refComp'));
