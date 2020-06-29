@@ -691,6 +691,40 @@ For example see in KeyImp.js
     Ex in useReff.js
 
 23. React fragments
+Fragements allow you to group a list of childeren wothout adding extra node to the DOM.
+Syntax:
+<React.Fragement>
+<h1>Child1</h1>
+<h2>Child2</h2>
+</React.Fragement> 
+
+24.Router
+React router is a standard library system built on the top of React and used to create routing in the React
+application using React Router package.
+
+Need of React Router
+It is used to display multiple views in a single page application.Without React Router ,it is not possible 
+to display multiple views in React applications.
+
+React Router Installation
+React conatins Three different packages for routing.
+These are:
+1.react-router : It provides thes core-routingg components and functions for the react Router applications.
+2.react-router-native : It is used for mobile applications.
+3.react router-dom : It is used for web application design.
+
+For Installation...naviagte to your application.
+The use code:
+npm install react-router
+
+Componets in React Router
+There are two types of router components:
+1.<BrowserRouter>:It is used for handling the dynamic URL.
+2.<HashRouter>:It is used for handling static request.
+
+What is Route?
+It is used to define and render component based on the specified path.It will accept components and render to
+define what shoukd be rendered.
 
 
 

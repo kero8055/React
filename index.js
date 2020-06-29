@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { Router, Route, Link } from 'react-router';
 import './index.css';
 import Table from './App1';
 import ParentComponent from './App';
@@ -16,7 +17,27 @@ import RefComp from './RefComp';
 import Refcall from './RefCallback';
 import CompRef from './ComponentRef';
 
+const routing=(
+  <Router >
+  <Route path = "/" component = {Arrow}>
+    
+     <Route path = "Arrow" component = {Arrow} />
+    
+  </Route>
+</Router>
+);
+ReactDOM.render(routing,document.getElementById('Link'));
+class App1 extends React.Component{
+  render(){
+    return(
+      <React.Fragment>
+        <h1>Hello React.js</h1>
+      </React.Fragment>
+    );
+  }
+}
 
+ReactDOM.render(<App1 />,document.getElementById('app1'));
 ReactDOM.render(<CompRef />,document.getElementById('refComp1'));
 ReactDOM.render(<Refcall />,document.getElementById('refCall'));
 ReactDOM.render(<Reff />,document.getElementById('reff'));
