@@ -698,7 +698,7 @@ Syntax:
 <h2>Child2</h2>
 </React.Fragement> 
 
-24.Router
+24.Router(Ex in index.js Router)
 React router is a standard library system built on the top of React and used to create routing in the React
 application using React Router package.
 
@@ -725,6 +725,29 @@ There are two types of router components:
 What is Route?
 It is used to define and render component based on the specified path.It will accept components and render to
 define what shoukd be rendered.
+
+Adding Navigation using Link componenet
+
+What is <Link> component?
+This component is used to create links which allow to navigate on different URLs and render its content without
+ reloading the page.
+
+To show the slected Link we need to use NavLink instead of Link.
+Now in .js file ,replace link from NavLink and add properties activeStyle.
+The activeStyle mean when we click on the Link,it should have a specific style so that we can differentiate
+ which one is currently active.
+
+<Link> vs <NavLink>
+The Link component allows navigating the dofferent routes on the websites,whereas NavLink component is used to add styles
+to the active routes.
+
+React Router Switch
+The <Switch> component is used to render components only when the path will be matched.Otherwise,it returns to the 
+notfound component.
+
+
+
+
 
 
 

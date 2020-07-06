@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, Link } from 'react-router';
+//import { Router, Route, Link } from 'react-router';
 import './index.css';
 import Table from './App1';
-import ParentComponent from './App';
+import ParentComponent from './App3';
 import Cons from './Constructor';
 import * as serviceWorker from './serviceWorker';
-import App from './LifeCycle';
+import App2 from './LifeCycle';
 import Arrow from './ArrowFn';
 import Box from './TextBox';
 import ListItem from './listExam';
@@ -16,8 +16,42 @@ import Reff from './Ref';
 import RefComp from './RefComp';
 import Refcall from './RefCallback';
 import CompRef from './ComponentRef';
+//import { Router, Route, Link, browserHistory } from 'react-router';
+import { Route, Link, BrowserRouter as Router, NavLink, Switch } from 'react-router-dom';
+import App from './App';
+import Home from './Home';
+import About from './About';
+import Contact from './Contact';
+import Notfound from './notfound';
 
-const routing=(
+
+
+ReactDOM.render((
+  <Router>
+    <div>
+    <h1>This is React Router Demo</h1>
+    <ul>
+      <li>
+        <NavLink to="/" activeStyle={{color:'green'}}><b>Home</b></NavLink>
+      </li>
+      <li>
+        <NavLink to="/about" activeStyle={{color:'blue'}}><b>About</b></NavLink>
+      </li>
+      <li>
+        <NavLink to="/contact" activeStyle={{color:'cyan'}}><b>Contact</b></NavLink>
+      </li>
+    </ul>
+    <Switch>
+     <Route  path = "/" component = {App} />
+     <Route path = "/about" component = {About} />
+     <Route path = "/contact" component = {Contact} />
+     <Route  component = {Notfound} />
+    </Switch>
+     </div>
+  </Router>
+), document.getElementById('Link'));
+
+/*const routing=(
   <Router >
   <Route path = "/" component = {Arrow}>
     
@@ -26,7 +60,7 @@ const routing=(
   </Route>
 </Router>
 );
-ReactDOM.render(routing,document.getElementById('Link'));
+ReactDOM.render(routing,document.getElementById('Link'));*/
 class App1 extends React.Component{
   render(){
     return(
@@ -71,7 +105,7 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('panel')
 );
-ReactDOM.render(<App />,document.getElementById('app')
+ReactDOM.render(<App2 />,document.getElementById('app')
 );
 setTimeout(()=>{
   ReactDOM.unmountComponentAtNode(document.getElementById('app'));}, 10000);
