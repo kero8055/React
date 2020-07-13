@@ -745,6 +745,110 @@ React Router Switch
 The <Switch> component is used to render components only when the path will be matched.Otherwise,it returns to the 
 notfound component.
 
+25.Animations
+The animation is a technique in which images are manipulated to appear as moving images.
+It is one of the most used technique to make an interactive web page application.In React , we can add 
+animation using an explicit group og componenets known as React Transition Group.
+
+React Transition Group
+It is an add on component for managing componenet states and useful for defining entering and exitng transitions.
+
+React transition group has mainly 2 Api's:
+1.ReactTansitionGroup
+    It is a low level API for animation.
+2.ReactCssTransitionGroup
+    It use as a high-level API for implementing basic css transition and animations.
+
+Installation
+
+npm install react-transition-group
+npm install react-pose
+For reference:https://popmotion.io/pose/
+
+ReactTansitionGroup(Component)
+React Tansition Group API provides three main Components:
+1.Transition
+    it has a simple component API to describe a transition from one component state to another over time.It is mainly
+    used to animate the mounting and unmounting of a component.It can also be used for in place Tansition state as well.
+
+    We can access the Tansition component into four states:
+    ->entering
+    ->entered
+    ->existing
+    ->existed
+2.CSS Tansition
+The CSS tansition component uses CSS stylesheet classes to write the transition and create animations.
+It has 3 states:
+->Appear
+->Enter
+->exitng
+
+3.Transition Group
+This component is used to manage a set of transitoin components.(Tansition and CSS Tansition) in a list.
+It is a stae machine that controls the mounting and unmounting of components over time.
+The transition component does not define any animate directly.
+
+26.Bootstrap
+    Adding Bootstrap for React:
+    1. Using the Bootstrap CDN
+   - Add link in any HTML file.
+    2.Bootstrap as Dependency
+    -npm install Bootstrap
+    3.React Bootstrap package
+    Two most popular Bootstrap package:
+    1.react-bootstrap
+    2.reactstrap
+
+27.React Table
+The react-table is a lightweight,fast,fully customizable and extendable Datagrid built for React.It is fully controllable
+via optional props and callbacks
+
+Features:
+1.It is lightweight at 11kb.
+2.It is customizable
+3.It is fully contolable via props
+4.It has client side and Server-side pagination
+5.It has filters
+6.Minimal design and easy themable
+
+install:
+//npm install react-table
+
+npm install @material-ui/core
+
+28.React Higher-Order Components
+It is also known as HOC. In React,HOC is an advanced technique for reuing component logic.
+It is a function that takes a component and returns a new component.
+
+A higher order component function accepts another function as an argument.
+Best Example:Map function.
+The main goal if this is to decompose the component logic into simpler and smaller functions that can be reused as you need.
+
+29.React Map
+A map is a data collection type where dat ais stored in the form of pairs.It contains a unique key.The value
+stored in the map must must be mapped to a key.
+We can not store duplicate pair in the map().It is because uniqueness of each key stored.
+It is maily used for fast searching and looking up data.
+
+30.Testing React Applications with Jest.
+
+What is unit test?
+Testing of all the applications in a single unit is called unit testing.
+
+Why write unit tests?
+This sugests us how can find errors and fix them before deploying our apps to production.
+
+
+Install JESt cli
+npm install jest-cli
+
+to execute test.
+npm test.
+
+
+
+
+
 
 
 
